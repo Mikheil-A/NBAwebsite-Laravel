@@ -1,0 +1,297 @@
+h1 {
+  padding: 15px;
+  margin:8px;
+  font: 50px "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,1), 0 0 30px rgba(255,255,255,1), 0 0 40px #1b1e24, 0 0 70px #1b1e24, 0 0 80px #1b1e24, 0 0 100px #1b1e24;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+h1:hover {
+  color: #333;
+  transition-duration: 0.3s;
+}
+
+
+/*Horizontal Line*/
+hr {
+  margin: 0 30px 30px;
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
+  dimgrey, rgba(0, 0, 0, 0));
+}
+
+
+.greyContainer{
+  margin: 70px 80px;
+  background-color:#f0f0f0;
+  border-radius: 25px;
+  /*padding: 80px 0 180px 110px;*/
+  padding: 70px 100px;
+}
+
+.floatLeft{
+  position: relative;
+  float:left;
+}
+.floatLeft img{
+  width: 300px;
+  height: 300px;
+}
+
+
+/*Watermark*/
+.forWatermark{
+  /*You can centre any child element using these properties:values*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#watermark{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 8;
+  visibility: hidden;
+}
+.forWatermark:hover #watermark{
+  visibility: visible;
+}
+#watermark p:first-child{
+  opacity: 2;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white;
+}
+#watermark > p:first-child > img{
+  height: 130px;
+  width: 130px;
+  margin: -25px 0 -30px;
+  padding: 0;
+  box-shadow: 2px 2px 40px -5px white;
+}
+#watermark input[type=file], #watermark input[type=submit]{
+  cursor: pointer;
+  opacity: 2;
+  font-weight: bold;
+  padding: 5px 30px;
+  font-size: 20px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 40px -5px white;
+}
+
+
+/*profileInfo*/
+#profileInfo{
+  border-collapse:collapse;
+  margin-bottom:25px;
+  position:relative;
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: -1px -1px 0 rgba(255,255,255,0.3), 1px 1px 0 rgba(0,0,0,0.8);
+  color: #1b1e24;
+  text-decoration: none;
+}
+#profileInfo tr{
+  transition-duration:0.1s;
+  transition-timing-function:ease-in;
+}
+#profileInfo tr:nth-child(even){
+  background-color: white;
+}
+#profileInfo tr:nth-child(odd){
+  background-color: #f0f0f0;
+}
+#profileInfo tr:hover{
+  background-color:#4E5066;
+  color:white;
+}
+#profileInfo td{
+  padding:10px;
+}
+
+
+/*Fieldset for changing password*/
+fieldset#changePassword {
+  font-family: sans-serif;
+  border: 2px solid #999;
+  border-radius: 7px;
+  padding: 9px;
+  margin: 25px 70px 0 0;
+}
+fieldset#changePassword legend {
+  background: #1b1e24;
+  color: #999;
+  padding: 3px 6px ;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 3px #ddd;
+  margin-left: 5%;
+}
+
+/*For for changing password*/
+input[type=password]{
+  padding: 5px;
+  font-size: 19px;
+  border: 0.5px solid #1b1e24;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px 0;
+  border-radius: 4px;
+  /*width: 80%;*/
+}
+input[type=password]:hover{
+  border-color: white;
+}
+input[type=password]:focus{
+  background-color: #1b1e24;
+  color: lightgray;
+  font-weight: 100;
+  border-color: #1b1e24;
+}
+
+/*Submit button for changing password*/
+#changePassButton {
+  width: 40%;
+  background-color: #1b1e24;
+  color: white;
+  padding: 4px 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: #000 0 1px 5px 0;
+  opacity: 0.7;
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+  transition-duration: 0.85s;
+}
+#changePassButton:hover {
+  opacity: 1;
+  border-radius: 0;
+  width: 100%;
+  transition-duration: 0.75s;
+}
+#changePassButton:focus {
+  border-color: #1e9ce6;
+  background-color: #fcfcfc;
+  opacity: 0.5;
+}
+
+#passChangeResult{
+  font-size: 15px;
+  text-align: center;
+  color: #D8000C;
+  background-color: #FFBABA;
+  border: 1px solid;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+
+/*Fieldsets for all registered users and the user messages*/
+fieldset {
+  font-family: sans-serif;
+  border: 3px solid #999;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 70px;
+}
+fieldset legend {
+  background: #1b1e24;
+  color: #999;
+  padding: 6px 12px ;
+  font-size: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 5px #ddd;
+  margin-left: 35%;
+}
+
+
+/*User messages*/
+#msgHeading{
+  text-shadow:2px 2px 2px dimgrey;
+  font-size:19px;
+  background-color:#3B3738;
+  color:white;
+  padding:8px;
+  margin:0;
+}
+#msgHeading b{
+  font-size: 21px;
+}
+#msgHeading span:last-child{
+  float: right;
+}
+fieldset#msg p#msgText{
+  color: #685206;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+fieldset p#total{
+  background-color: rgb(89, 89, 89);
+  padding: 8px 15px;
+  margin-top: 10px;
+  width: 10%;
+  float: right;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  border-radius: 12px;
+  text-align: center;
+}
+
+
+/*All users*/
+.avatar_fr{ float:right; }
+.avatar_fl{ float:left; }
+.avatar_fl, .avatar_fr { width:30%; }
+.avatar_fl td, .avatar_fr td{text-align:center;}
+.avatar_fr img, .avatar_fl img{
+  transition-duration:0.45s;
+  width:100%;
+  height:auto;
+}
+.avatar_fr img:hover, .avatar_fl img:hover{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+
+/*userInfo*/
+.userInfo{
+  width:70%;
+  border-collapse:collapse;
+  margin-bottom:22px;
+  position:relative;
+}
+.userInfo tr{
+  transition-duration:0.1s;
+  transition-timing-function:ease-in;
+}
+.userInfo td{
+  padding:10px;
+}
+.userInfo tr:nth-child(even){
+  background-color:#EBEBEB;
+}
+.userInfo tr:hover{
+  background-color:#4E5066;
+  color:white;
+}
+
+hr#users{
+  width: 71%;
+  margin: 0 30px 30px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
+  dimgrey, rgba(0, 0, 0, 0));
+}

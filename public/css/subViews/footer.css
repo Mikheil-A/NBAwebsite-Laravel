@@ -1,0 +1,40 @@
+﻿footer {
+  /*position: fixed;*/
+  position:relative;
+  background-color: rgb(89, 89, 89);
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding:10px 0;
+}
+
+#lastRegistered {
+  margin:5px;
+  font-size:17px;
+  position: relative;
+}
+
+#copyright {
+  position: relative;
+  width: 300px;
+  padding:0;
+  margin: 0 auto;
+  font-size:18px;
+}
+
+#developer {
+  font-size: 15px;
+  right: 0;
+  /*position:relative;*/
+  position: absolute;
+  bottom:0;
+  margin-right:5px;
+}
+#developer a {
+  color: #e68a00;
+  text-decoration: none;
+  font-size:20px;
+}
+#developer a:hover {
+  color: #ffad33;
+}

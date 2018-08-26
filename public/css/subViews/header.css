@@ -1,0 +1,91 @@
+﻿header {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, blue, white, red);
+}
+
+
+img#logo {
+  transition-duration: 0.45s;
+}
+img#logo:hover {
+  transform: scale(0.95);
+  opacity: 0.75;
+}
+
+
+/*Log in*/
+.loginData {
+  background-color: rgb(89, 89, 89);
+  border-radius: 5px;
+  padding: 6px 12px;
+  float: right;
+  margin: 20px 20px 0 0;
+  display: block;
+  position:relative;
+}
+.loginData a{
+  font-size: 23px;
+  text-decoration: none;
+  color: white;
+}
+
+
+/*Logged in username and dropdown*/
+#profilePhoto{
+  height: 32px;
+  width: 32px;
+  margin: 0 0 -6px;
+  padding: 0;
+}
+#loggedInUsername{
+  cursor: default;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+#dropdown{
+  padding: 2px 5px;
+}
+#dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 100;
+  color: #1b1e24;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 8px 10px 0;
+  background-color: #f2f2f2;
+}
+#dropdown:hover #dropdown-content{
+  display: block;
+}
+#dropdown-content > a {
+  padding: 5px 18px;
+  display: block;
+  color: #1b1e24;
+  text-decoration: none;
+  font-size: 23px;
+}
+#dropdown-content a:hover {
+  background-color:#eaeaea;
+  text-shadow: 8px 8px 8px #666;
+}
+
+
+p#nba {
+  font-variant: small-caps;
+  text-transform: capitalize;
+  font-size: 30px;
+  word-spacing: 15px;
+  /*width: 600px;*/
+  display: inline;
+  /*height: 100px;*/
+  position: absolute;
+  top: -20%;
+  left: 35%;
+}
+p#nba > span { font-weight: 900; }
+#N, #B, #A { font-size: 40px; }
+#N { color: blue; }
+#B { color: white; }
+#A { color: red; }
